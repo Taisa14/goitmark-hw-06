@@ -20,7 +20,6 @@
  
 body {
 font-family: 'Roboto', sans-serif;
-
 }
 
 h1,
@@ -173,6 +172,7 @@ margin-right: 93px;
     height: 4px;
     border-radius: 2px;
     background-color: #2196F3;
+    
 }
 .nav-item.nav-item-current {
     position: relative;
@@ -653,6 +653,65 @@ background-color: var(--accent-color);
     width: 20px;
     height: 20px;
 }
+.subscribe-text {
+    font-size: 14px;
+    font-family: inherit;
+    color: #ffffff;
+    margin: 0px 0px 20px;
+    text-transform: uppercase;
+}
+.footer-subscribe-form {
+    display: flex;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 16px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    align-items: center;
+    letter-spacing: 0.03px;
+    color: rgba(255, 255, 255, 0.3);
+
+   
+}
+
+.footer-button-icon {
+ margin-left: 30px;
+ margin-top: 120px;
+ fill: currentcolor;
+}
+.footer-subscribe-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-button {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    color: var(--primery-white-color);
+    background-color: #2196F3;
+    border: #2196F3;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    font-family: inherit;
+    padding: 10px 28px;
+    border-radius: 4px;
+}
+.footer-form {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: baseline;
+}
+
 
 /**
   |============================
@@ -700,6 +759,8 @@ transform: translate(-50%, -50%) scale(1) rotate(0);
     transition: transform 400ms ease-in-out 200ms, opasity 400ms ease-in-out 200ms;
 }
 
+
+
 .backdrop.is-hidden .modal {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.3) rotate(1turn);
@@ -724,7 +785,115 @@ transform: translate(-50%, -50%) scale(1) rotate(0);
 border: 1px solid var(--modal-window-close-border-color);
 }
 
+.register-form {
+  text-align: center;
+}
 
+.register-form-title {
+  display: block;
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  text-align: center;
+}
+
+.register-form-group {
+  margin-bottom: 25px;
+}
+
+.register-form-wrap {
+  position: relative;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.register-form-wrap:last-child {
+  margin-bottom: 0;
+}
+
+.register-form-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+  padding-left: 5px;
+}
+
+.register-form-input,
+.register-form-message {
+  width: 100%;
+  border: 1px solid #2196F3;
+  padding: 10px;
+  padding-left: 50px;
+  border-radius: 5px;
+
+  outline: transparent;
+}
+
+.register-form-message {
+  padding: 10px;
+  height: 90px;
+  resize: none;
+}
+
+.register-form-icon {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+
+.register-form-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.register-checkbox:checked + .register-icon .register-icon-uncheck {
+  opacity: 0;
+  transition: opacity var(--anim-fast);
+}
+
+.register-icon-check {
+  opacity: 0;
+  fill: #2196F3;
+  transition: opacity var(--anim-fast);
+}
+
+.register-checkbox:checked + .register-icon .register-icon-check {
+  opacity: 1;
+}
+
+.register-form-agreement-text {
+  font-size: 14px;
+  user-select: none;
+  text-underline-position: under;
+}
+
+.register-form-agreement-link {
+  color: #2196f3;
+}
+
+.register-form-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 25px;
+
+  color: #212121;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #2196F3;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.register-form-btn-icon {
+  fill: #2196f3;
+}
 /**
   |============================
   | Portfolio page
