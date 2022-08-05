@@ -16,11 +16,23 @@
 --portfolio-overlay-text-bg-color: rgba(33,150,243,0.9); 
 --modal-window-bg-color: rgba(0,0,0,0.2);
 --modal-window-close-border-color: rgba(0,0,0,0.1); 
+
+
+ 
  }
  
 body {
 font-family: 'Roboto', sans-serif;
 }
+.no-scroll {
+  overflow: hidden;
+}
+
+/**
+  |============================
+  | reset syles
+  |============================
+*/
 
 h1,
 h2,
@@ -32,7 +44,7 @@ p {
     margin: 0;
 }
 
-img {
+.img {
     display: block;
 }
 .link {
@@ -406,9 +418,7 @@ color: var(--title-text-color);
     justify-content: space-between;
    
 }
-img {
-    display: block;
-}
+
 
 .title-name {
     font-weight: 500;
@@ -653,6 +663,12 @@ background-color: var(--accent-color);
     width: 20px;
     height: 20px;
 }
+
+/**
+  |============================
+  | footer-subscribe
+  |============================
+*/
 .subscribe-text {
     font-size: 14px;
     font-family: inherit;
@@ -679,12 +695,12 @@ background-color: var(--accent-color);
 }
 
 .footer-button-icon {
- margin-left: 30px;
- margin-top: 120px;
+ position: absolute;
+ margin-left: 10px;
  fill: currentcolor;
 }
 .footer-subscribe-btn {
-    display: flex;
+   
     align-items: center;
     justify-content: center;
 }
