@@ -691,8 +691,8 @@ margin-left: auto;
     color: #ffffff;
     margin-bottom: 20px;
     text-transform: uppercase;
-    font-size: 16px;
-    line-height: calc(20 / 16);
+    
+    line-height: calc(16 / 14);
     letter-spacing: 0.03px;
 }
 .footer-subscribe-form {
@@ -825,8 +825,8 @@ transform: translate(-50%, -50%) scale(1) rotate(0);
     background-color: var(--primery-white-color);
 border: 1px solid var(--modal-window-close-border-color);
 }
-.modal-btn:hover  {
-background-color:#2196F3;
+.modal-btn-icon:hover  {
+fill: #2196F3;
 }
 
     
@@ -974,8 +974,8 @@ color: rgb(117, 117, 117, 0.5);
   letter-spacing: 0.06em;
   background-color: #2196F3;
   border: none;
-  box-shadow: rgba(0 0 0 / 15%);
-
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
   cursor: pointer;
 }
 
